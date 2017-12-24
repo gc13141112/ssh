@@ -100,4 +100,10 @@ sudo /etc/init.d/nfs restart(注意要在你的管理节点，也就是你要给
     Starting NFS quotas:                                       [  OK  ]
     Starting NFS mountd:                                       [  OK  ]
     Starting NFS daemon:                                       [  OK  ]
-    Starting RPC idmapd:                                       [  OK  ]
+    Starting RPC idmapd:                                       [  OK  ]
+## 3. 编辑安全组，允许2049端口能被client访问
+
+Ingress rules:
+
+    Protocol 	Port range 	Source 	Description
+    TCP 	        2049 	        10.0.0.0/16 	
