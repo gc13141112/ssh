@@ -63,3 +63,11 @@ echo "miyao" >>/root/.ssh/authorized_keys
     source /etc/profile
     ./torque.setup root
     ./gterm -t quick
+    
+    for i in pbs_server pbs_sched pbs_mom trqauthd; do service $i start; done
+    vi /var/spool/torque/server_priv/nodes
+    master np=40
+    node1 np=60
+    vi /var/spool/torque/mom_priv/config
+    pbsserver master
+    logevent 255
