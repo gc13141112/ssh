@@ -90,13 +90,14 @@ echo "miyao" >>/root/.ssh/authorized_keys
     /home   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
 ## 2. 重启NFS服务
 
-sudo /etc/init.d/nfs restart
-Shutting down NFS daemon:                                  [  OK  ]
-Shutting down NFS mountd:                                  [  OK  ]
-Shutting down NFS quotas:                                  [  OK  ]
-Shutting down RPC idmapd:                                  [  OK  ]
-Starting NFS services:                                     [  OK  ]
-Starting NFS quotas:                                       [  OK  ]
-Starting NFS mountd:                                       [  OK  ]
-Starting NFS daemon:                                       [  OK  ]
-Starting RPC idmapd:                                       [  OK  ]
+sudo /etc/init.d/nfs restart(注意要在你的管理节点，也就是你要给别人的)
+
+    Shutting down NFS daemon:                                  [  OK  ]
+    Shutting down NFS mountd:                                  [  OK  ]
+    Shutting down NFS quotas:                                  [  OK  ]
+    Shutting down RPC idmapd:                                  [  OK  ]
+    Starting NFS services:                                     [  OK  ]
+    Starting NFS quotas:                                       [  OK  ]
+    Starting NFS mountd:                                       [  OK  ]
+    Starting NFS daemon:                                       [  OK  ]
+    Starting RPC idmapd:                                       [  OK  ]
