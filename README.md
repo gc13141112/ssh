@@ -20,3 +20,13 @@ echo "miyao" >>/root/.ssh/authorized_keys
    echo 在B机器上执行一下
    
     然后再试
+    
+# 亚马逊集群配置
+
+## 1.更改主机名
+
+### 管理节点
+
+a.在root下vi /etc/sysconfig/network  修改hostname=master(管理节点);
+
+b.在root下vi /etc/hosts 添加各个节点ip 及名称
