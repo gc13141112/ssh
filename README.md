@@ -27,9 +27,9 @@ echo "miyao" >>/root/.ssh/authorized_keys
 
 ### 管理节点
 
-a.在root下vi /etc/sysconfig/network  修改hostname=master(管理节点);
+#### a.在root下vi /etc/sysconfig/network  修改hostname=master(管理节点);
 
-b.在root下vi /etc/hosts 添加各个节点ip 及名称
+#### b.在root下vi /etc/hosts 添加各个节点ip 及名称
 
 1.2.3.4 master
 
