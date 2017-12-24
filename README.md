@@ -88,3 +88,15 @@ echo "miyao" >>/root/.ssh/authorized_keys
     
     /home   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
     /home   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
+## 2. 重启NFS服务
+
+sudo /etc/init.d/nfs restart
+Shutting down NFS daemon:                                  [  OK  ]
+Shutting down NFS mountd:                                  [  OK  ]
+Shutting down NFS quotas:                                  [  OK  ]
+Shutting down RPC idmapd:                                  [  OK  ]
+Starting NFS services:                                     [  OK  ]
+Starting NFS quotas:                                       [  OK  ]
+Starting NFS mountd:                                       [  OK  ]
+Starting NFS daemon:                                       [  OK  ]
+Starting RPC idmapd:                                       [  OK  ]
