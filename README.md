@@ -83,6 +83,7 @@ echo "miyao" >>/root/.ssh/authorized_keys
 ## 1. 在NFS server的EC2上，编辑/etc/exports文件，将/home/ec2-user/data 共享
 
 
+
     $ cat /etc/exports
     
     /home   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
