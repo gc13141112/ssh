@@ -106,4 +106,15 @@ sudo /etc/init.d/nfs restart(注意要在你的管理节点，也就是你要给
 Ingress rules:
 
     Protocol 	Port range 	Source 	Description
-    TCP 	        2049 	        10.0.0.0/16 	
+    TCP 	        2049 	        10.0.0.0/16 	
+## 4.客户端配置
+
+1. 安装NFS client
+
+$ sudo yum -y install nfs-utils
+
+2. 挂载共享路径
+
+$ sudo mount 10.0.1.23:/home/ec2-user/data /home/ec2-user/data
+
+这里10.0.1.23为NFS server的地址
