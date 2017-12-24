@@ -78,3 +78,9 @@ echo "miyao" >>/root/.ssh/authorized_keys
     source /home/ec2-user/data/LIBRARY/intel/composer_xe_2015.2.164/bin/ifortvars.sh intel64
     source /home/ec2-user/data/LIBRARY/intel/composer_xe_2015.2.164/bin/iccvars.sh intel64
     export LD_LIBRARY_PATH=/home/ec2-user/data/LIBRARY/intel/lib/intel64:$LD_LIBRARY_PATH
+    
+# NFS server配置：
+    
+    $ cat /etc/exports
+    /home   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
+    /home   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
