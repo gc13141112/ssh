@@ -52,3 +52,7 @@ echo "miyao" >>/root/.ssh/authorized_keys
     ./configure --prefix=/home/ec2-user/data/torque-4.2.9 --with-scp --with-default-server=master
     
     make && make install && make packages
+    
+    cp contrib/init.d/{pbs_{server,sched,mom},trqauthd} /etc/init.d/
+
+    for i in pbs_server pbs_sched pbs_mom trqauthd; do chkconfig --add $i; chkconfig $ion; done
