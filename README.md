@@ -71,3 +71,10 @@ echo "miyao" >>/root/.ssh/authorized_keys
     vi /var/spool/torque/mom_priv/config
     pbsserver master
     logevent 255
+    
+    ps -e | grep pbs
+    for i in pbs_server pbs_sched pbs_mom trqauthd; do service $i restart; done
+    for i in pbs_mom trqauthd; do service $i start; done
+    source /home/ec2-user/data/LIBRARY/intel/composer_xe_2015.2.164/bin/ifortvars.sh intel64
+    source /home/ec2-user/data/LIBRARY/intel/composer_xe_2015.2.164/bin/iccvars.sh intel64
+    export LD_LIBRARY_PATH=/home/ec2-user/data/LIBRARY/intel/lib/intel64:$LD_LIBRARY_PATH
