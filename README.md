@@ -86,8 +86,8 @@ echo "miyao" >>/root/.ssh/authorized_keys
 
     $ cat /etc/exports
     
-    /home   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
-    /home   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
+    /home/ec2-user/data   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
+    /home/ec2-user/data   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
 ## 2. 重启NFS服务
 
 sudo /etc/init.d/nfs restart(注意要在你的管理节点，也就是你要给别人的)
