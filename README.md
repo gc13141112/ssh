@@ -56,3 +56,10 @@ echo "miyao" >>/root/.ssh/authorized_keys
     cp contrib/init.d/{pbs_{server,sched,mom},trqauthd} /etc/init.d/
 
     for i in pbs_server pbs_sched pbs_mom trqauthd; do chkconfig --add $i; chkconfig $ion; done
+    
+    vi /etc/profile
+    export PATH=/home/ec2-user/data/torque-4.2.9/bin:$PATH
+    export PATH=/home/ec2-user/data/torque-4.2.9/sbin:$PATH
+    source /etc/profile
+    ./torque.setup root
+    ./gterm -t quick
