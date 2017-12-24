@@ -109,12 +109,12 @@ Ingress rules:
     TCP 	        2049 	        10.0.0.0/16 	
 ## 4.客户端配置
 
-1. 安装NFS client
+### 1. 安装NFS client
 
-$ sudo yum -y install nfs-utils
+     $ sudo yum -y install nfs-utils
 
-2. 挂载共享路径
+### 2. 挂载共享路径
 
-$ sudo mount 10.0.1.23:/home/ec2-user/data /home/ec2-user/data
+     $ sudo mount 10.0.1.23:/home/ec2-user/data /home/ec2-user/data
 
-这里10.0.1.23为NFS server的地址
+     这里10.0.1.23为NFS server的地址
