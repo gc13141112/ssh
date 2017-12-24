@@ -87,5 +87,4 @@ echo "miyao" >>/root/.ssh/authorized_keys
     $ cat /etc/exports
     
     /home   54.222.142.217(rw,sync,no_root_squash,no_subtree_check)
-    
     /home   10.0.1.59(rw,sync,no_root_squash,no_subtree_check)
