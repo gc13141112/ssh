@@ -44,3 +44,9 @@ echo "miyao" >>/root/.ssh/authorized_keys
     1.2.3.4 master
 
     1.2.3.4 node1
+
+## 2.开始安装torque
+
+### yum -y install libxml2-devel openssl-devel gcc gcc-c++ boost-devel libtool
+
+### ./configure --prefix=/home/ec2-user/data/torque-4.2.9 --with-scp --with-default-server=master
