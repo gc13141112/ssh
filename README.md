@@ -126,5 +126,6 @@ Ingress rules:
     http://www.cnblogs.com/52php/p/5666755.html
     
     vi /etc/rc.d/rc.local
+    
     ulimit -s ulimited
     ulimit -c ulimited
