@@ -129,3 +129,5 @@ Ingress rules:
     
     ulimit -s ulimited
     ulimit -c ulimited
+    
+    最后重启 reboot
