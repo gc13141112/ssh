@@ -118,3 +118,6 @@ Ingress rules:
      $ sudo mount 10.0.1.23:/home/ec2-user/data /home/ec2-user/data
 
      这里10.0.1.23为NFS server的地址
+     
+## 5.疑难问题
+    1.ulimit -s unlimited 自启动生效
